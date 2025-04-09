@@ -1,0 +1,34 @@
+
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Logs
+logs
+*.log
+pnpm-debug.log*
+
+# dependencies
+node_modules
+
+# builds
+dist
+
+.DS_Store
+*.local
+.history
+
+# cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# yalc
+.yalc
+yalc.lock
+playground/demo

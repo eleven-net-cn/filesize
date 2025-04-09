@@ -1,0 +1,60 @@
+{
+  "name": "@e.fe/filesize",
+  "version": "1.0.0",
+  "description": "File size calculation tool",
+  "author": "Eleven <master@eleven.net.cn>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eleven-net-cn/filesize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eleven-net-cn/filesize/issues"
+  },
+  "keywords": [
+    "filesize",
+    "fileSize",
+    "file size"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "filesize": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "play": "pnpm -C playground start",
+    "start": "tsup --watch",
+    "build": "tsup",
+    "lint": "eslint . --fix",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp && npm publish"
+  },
+  "dependencies": {
+    "bumpp": "^10.1.0",
+    "filesize": "^10.1.0",
+    "glob": "^10.3.10",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.15.0",
+    "@types/node": "^22.10.7",
+    "eslint": "^9.18.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3"
+  },
+  "volta": {
+    "node": "22.13.1",
+    "pnpm": "9.15.4"
+  }
+}

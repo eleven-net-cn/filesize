@@ -40,6 +40,9 @@
     "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "bumpp": "^10.1.0",
     "filesize": "^10.1.0",

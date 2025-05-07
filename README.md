@@ -6,18 +6,17 @@
 [downloads-image]: https://img.shields.io/npm/dt/@e.fe/filesize.svg
 [npm-image]: https://img.shields.io/npm/v/@e.fe/filesize.svg
 
-![](./svg.svg)
+File size calculation tool
 
 # Usage
 
 ## CLI
 
 ```zsh
-npx filesize dist
-
-# OR
-# npx @e.fe/filesize dist
+npx @e.fe/filesize dist
 ```
+
+![](./usage.svg)
 
 ## Node API
 
